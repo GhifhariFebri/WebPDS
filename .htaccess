@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# If the request is not for the index.html, redirect to error404.html
+RewriteCond %{REQUEST_URI} !^/web/index\.html$
+RewriteCond %{REQUEST_URI} !^/web/error404\.html$
+RewriteCond %{REQUEST_URI} !^/web/$
+RewriteRule ^(.*)$ /web/error404.html [L,R=404]
+
+# Ensure that the 404 error is redirected to the custom error page
+ErrorDocument 404 /web/error404.html
