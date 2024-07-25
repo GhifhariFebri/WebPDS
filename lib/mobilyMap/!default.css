@@ -1,0 +1,333 @@
+
+/* ------ mobilymap
+-----------------------------------------------*/
+
+.loader {
+background:url(img/loader.gif) no-repeat center #fff;
+}
+
+.imgCaption {
+bottom:0;
+left:0;
+color:#fff;
+opacity:.6;
+background:#333;
+padding:10px;
+width:940px;
+text-align:center;
+font-size:16px;
+text-transform:uppercase;
+text-shadow:1px 1px 0 #111;
+font-weight:bold;
+display:none !important;
+}
+
+.bubble .close {
+	display:block;
+	text-indent:-9999px;
+	position:absolute;
+	top:-6px;
+	right:-6px;
+	width:16px;
+	height:16px;
+	outline:none;
+	background:url(img/close.png) no-repeat;
+	cursor:pointer;
+}
+
+.mapNav {
+width:84px;
+height:84px;
+}
+
+.navBtn {
+position:absolute;
+background-repeat:no-repeat;
+width:32px;
+height:32px;
+outline:none;
+text-indent:-9999px;
+display:block;
+z-index:7px;
+}
+
+.navBtn0 {
+top:0;
+left:26px;
+background-image:url(img/navtop.png);
+}
+
+.navBtn1 {
+top:26px;
+right:0;
+background-image:url(img/navright.png);
+}
+
+.navBtn2 {
+bottom:0;
+left:26px;
+background-image:url(img/navbottom.png);
+}
+
+.navBtn3 {
+top:26px;
+left:0;
+background-image:url(img/navleft.png);
+}
+
+/* ------ example1
+-----------------------------------------------*/
+
+
+.bubble {
+	padding:7px 10px;
+	*background:#333;
+	background:rgba(4,68,132,0.8);
+	color:#fff;
+	width:240px;
+	font-size:11px;
+	
+	/*-- css3 --*/
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	-moz-box-shadow:0 0 20px #999;
+	-webkit-box-shadow:0 0 20px #999;
+	
+	/****/
+	border:1px solid #044484;
+	/**position: absolute !important; 
+	*z-index: 3;
+	*bottom:100px !important;
+	*top: 596px; 
+	*left: 1147px; 
+	*margin-left: -90.5px;
+	*margin-top:-175px;
+	*top:10px !important;*/
+}
+.bubble{
+	/*
+	position: absolute;
+	top:350px !important;
+	z-index: 3; 
+	top: 350px; 
+	left: 1147px; 
+	margin-left: -89.5px;*/
+}
+.bubble:after {
+	content:url(../../images/icon-panah-bubble.png);
+	position:absolute;
+	left:calc(50% - 14px);
+	bottom:-10px !important;
+}
+
+.bubble h3 {
+	border:1px solid cyan;
+	line-height:14px;
+}
+.bubble p {
+	margin:5px 0;
+	font-size:14px;
+	text-align:center;
+}
+.bubble a.lihat{
+	*border:1px solid red !important;
+	display:inline-block;
+	width:100%;
+	text-align: center;
+}
+.bubble span.nama-cabang {
+	font-size:14px;
+	text-transform:uppercase;
+	border-bottom:1px solid #4173a6;
+	padding-bottom:7px;
+	margin-bottom:7px;
+	*color:red;
+}
+.bubble a i{
+	vertical-align:middle;
+}
+.bubble span {
+	display:block;
+	*font-size:12px;
+	*font-weight:bold;
+}
+
+.bubble img {
+	vertical-align:bottom;
+}
+
+.map_buttons {
+	position:absolute;
+	z-index:10;
+	
+	top:50px;	
+}
+@media screen and (max-width:767px) {
+	.map_buttons {
+		position:relative;
+		z-index:10;
+		
+		top:0px;
+		
+		
+	}
+
+} 
+
+
+.map_buttons a:hover {
+	
+}
+
+a {
+	color:#fff;
+}
+
+.europe_map {
+	/*position:relative;
+	
+	*border:2px solid red;
+	border-top:1px solid #FFF;
+	background:url(../../../WEB-INF/images/bg-texture.jpg);*/
+}
+@media screen and (max-width:767px) {
+	.europe_map {
+		position:absolute;
+		top:0px !important;
+	}
+}
+
+.point {
+	display:block;
+	*text-indent:-9999px;
+	/*width:32px;
+	height:44px;*/
+	*width:59px;
+	*height:61px;
+	
+	width:13px;
+	height:18px;
+	outline:none;
+	*background:url(img/mapMarker.png) no-repeat;
+	cursor:pointer;
+	
+	*z-index:9999999;
+	*border:1px solid red;
+	
+	margin-left:19px;
+	margin-top:16px;
+}
+.point:before {
+	font-family:FontAwesome;
+	content:"\f041";
+	font-size:30px !important;
+	*margin-left:19px;
+	text-shadow:1px 1px 1px #000;
+
+}
+.point.merah{	color:red;}
+.point.kuning{	color:#f0d706;}
+.point.hijau{	color:green;}
+
+ul.map_buttons{
+	margin-left:0px;
+	width:100% !important;
+	*border:1px solid red;
+	padding:0 0 !important;
+	height:calc(100% - 50px);
+	overflow:auto;
+}
+ul.map_buttons,
+ul.map_buttons li {
+	list-style:none;
+}
+
+.map_buttons li {
+	margin-left:0px !important;
+	list-style-position:inside;
+	*border:1px solid red;
+	
+}
+.map_buttons li:nth-child(even) {
+	background:rgba(0,0,0,0.3);
+}
+.map_buttons a {
+	color:#FFF;
+	display:block;
+	*font-size:12px !important;
+	font-size:80%;
+	*line-height:14px;
+	outline:none;
+	text-decoration:none;
+	
+	*background:#FDC150;
+	
+	width:100%;
+	*padding:5px 20px;
+	color:#FFF !important;
+	text-transform:uppercase;
+	*height:24px;
+	
+	*border:1px solid cyan;
+	
+	height:32px;
+	line-height:32px;
+	padding:0 20px;
+}
+.map_buttons a:hover{
+	background:#202020;
+	/*border-bottom:1px solid #141414;
+	border-top:1px solid #141414;
+	height:22px;
+	line-height:24px;*/
+}
+.map_buttons li a span {
+	*background:#044484;
+	display:inline-block;
+	*height:18px;
+	*line-height:18px;
+	*padding:2px 5px;
+	width:30px;
+	height:20px;
+	line-height:20px;
+	vertical-align:middle;
+	text-align:center;
+	margin:0px 10px 2px 0;
+	
+	*border:1px solid red;
+	*vertical-align:middle;
+}
+/****/
+.map_buttons li a span.merah{	background:red; color:#FFF;}
+.map_buttons li a span.kuning{	background:#f0d706; color:#FFF;}
+.map_buttons li a span.hijau{	background:green; color:#FFF;}
+
+
+
+.bubble a {
+	color:white;
+	cursor:pointer;
+	display:block;
+}
+
+/****/
+div.data-cabang{
+	*display:none;
+	*border:2px solid red;
+	background:#044484;
+	margin-bottom:10px;
+	
+	position:relative;
+}
+div.data-cabang table{
+	border-collapse:collapse;
+	width:100%;
+}
+div.data-cabang table td{
+	padding:3px 5px;
+	border:1px solid #4173a6;
+	
+}
+
+
